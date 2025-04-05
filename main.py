@@ -38,7 +38,7 @@ def get_row_handler_level_sorted(handler_counter: defaultdict) -> str:
     return '\n'.join(table)
 
 
-def print_report(handler_counter, total_requests):
+def print_report(handler_counter: defaultdict, total_requests: int) -> None:
     header = (
         f'{"HANDLER":<25}' +
         ''.join(
